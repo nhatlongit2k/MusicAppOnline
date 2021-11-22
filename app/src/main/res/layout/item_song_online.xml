@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gray"
+    android:layout_margin="5dp">
+    <ImageView
+        android:id="@+id/img_item_song_online"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/music">
+    </ImageView>
+    <TextView
+        android:textColor="#BA0404"
+        android:id="@+id/tv_title_song_online"
+        android:layout_margin="5sp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/img_item_song_online"
+        android:text="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_toLeftOf="@id/layout_download_favorite"/>
+    <TextView
+        android:id="@+id/tv_author_song_online"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/img_item_song_online"
+        android:layout_below="@+id/tv_title_song_online"
+        android:textSize="15sp"
+        android:text="Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/layout_download_favorite"/>
+
+    <LinearLayout
+        android:id="@+id/layout_download_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/img_download_song_online"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_arrow_downward_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/img_favorite_song_online"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_download_song_online"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+    </LinearLayout>
+
+</RelativeLayout>

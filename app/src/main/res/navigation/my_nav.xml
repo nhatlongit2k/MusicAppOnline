@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/rankingFragment">
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.musicapp.fragment.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/localMusicFragment"
+        android:name="com.example.musicapp.fragment.LocalMusicFragment"
+        android:label="fragment_local_music"
+        tools:layout="@layout/fragment_local_music" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.musicapp.fragment.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+</navigation>

@@ -23,12 +23,12 @@
             android:text="Tên bài hát"
             android:gravity="center"
             android:textSize="30dp"/>
-        <ImageView
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager_song"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:src="@drawable/daco"/>
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
         <LinearLayout
             android:layout_marginTop="30dp"
             android:layout_marginHorizontal="30dp"

@@ -1,17 +1,23 @@
-package com.example.musicapp
+package com.example.musicapp.model.model_search
 
-import android.graphics.Bitmap
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 class Song(
+    @SerializedName("id")
+    @Expose
     var id: String?,
+    @SerializedName("name")
+    @Expose
     var title: String,
+    @SerializedName("artist")
+    @Expose
     var artist: String?,
-    var resource: String,
+    @SerializedName("thumb")
+    @Expose
     var image: String?
-    ) : Serializable {
+) : Serializable {
     init {
         if(artist == null){
             artist = "unknown"

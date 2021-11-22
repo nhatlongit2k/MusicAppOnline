@@ -1,18 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/listview_song"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="10dp"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        ></ListView>
+<!--    <ListView-->
+<!--        android:id="@+id/listview_song"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:divider="@android:color/transparent"-->
+<!--        android:dividerHeight="10dp"-->
+<!--        android:padding="10dp"-->
+<!--        tools:listitem="@layout/item_song"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/main_layout_bottom"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--    </ListView>-->
 
-</RelativeLayout>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/listview_song"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:divider="@android:color/transparent"-->
+<!--            android:dividerHeight="10dp"-->
+<!--            android:padding="10dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/main_layout_bottom"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/main_layout_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_find"
+        app:navGraph="@navigation/my_nav" />
+
+    <LinearLayout
+        android:id="@+id/layout_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="20dp">
+        <EditText
+            android:id="@+id/edt_find_song"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:hint="Tìm kiếm online"/>
+        <ImageView
+            android:id="@+id/bt_find_song"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFAE72"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/layout_bottom_main"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_tv_song_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/main_tv_song_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noti_tv_song_title"
+                android:layout_marginLeft="10dp"
+                android:text="test" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/main_bt_previous_song"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/baseline_skip_previous_black_20" />
+
+            <ImageView
+                android:id="@+id/main_bt_play_pause"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/baseline_pause_black_20" />
+
+            <ImageView
+                android:id="@+id/main_bt_next_song"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/baseline_skip_next_black_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,22 @@
         <entry key="..\:/Android_kotlin/MusicApp/app/src/main/res/layout/activity_play_music.xml" value="0.22" />
         <entry key="..\:/Android_kotlin/MusicApp/app/src/main/res/layout/layout_custom_noti.xml" value="0.33" />
         <entry key="..\:/Android_kotlin/MusicApp/app/src/main/res/layout/noti_custom.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android_kotlin/MusicAppChange/MusicApp/MusicAPP/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/drawable/background_aqua.xml" value="0.265625" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/drawable/background_gray.xml" value="0.3828125" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.32037037037037036" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/activity_play_music.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/activity_search_music.xml" value="0.2015625" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/fragment_favourite.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/fragment_local_music.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/fragment_music_anim.xml" value="0.2" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/fragment_ranking.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/fragment_related_music.xml" value="0.2296875" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/item_song.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/item_song_online.xml" value="0.2595108695652174" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/layout/layout_custom_noti.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/LongTienSinh/Desktop/test/MusicApp/MusicAPP/app/src/main/res/menu/bottom_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
